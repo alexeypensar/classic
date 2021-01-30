@@ -52,7 +52,7 @@ button:hover {
 .main-link::after {
   content: '';
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -422,7 +422,7 @@ h1 {
 .types__button_active::after {
   content: '';
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 1px;
