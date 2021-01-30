@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-	max-width: 1230px;
+	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	padding-left: 15px;
@@ -170,7 +170,7 @@ h1 {
 		width: 458px;
 		height: 490px;
 		z-index:2;
-		overflow: visible;
+		//overflow: visible;
 		//pointer-events: none;
 	}
 
@@ -181,10 +181,10 @@ h1 {
 		border-right: 10px solid $color-green;
 		border-bottom: 10px solid $color-green;
 		bottom: -3px;
-		right: 5px;
+		right: -10px;
 		width: 310px;
 		height: 490px;
-		overflow: visible;
+		//overflow: visible;
 		//pointer-events: none;
 		//z-index: -1;
 	}
@@ -202,15 +202,19 @@ h1 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
+	width: 100%;
+
+
 
 }
 
 .banner__text {
-	padding: 100px 110px 120px 0;
+	padding: 100px 100px 120px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	width: 50%;
 
 	& h2 {
 		font-weight: 600;
@@ -232,6 +236,10 @@ h1 {
 		font-feature-settings: 'pnum' on, 'lnum' on;
 		margin-bottom: 40px;
 	}
+
+	& b {
+		font-weight: 600;
+	}
 }
 
 .banner__links {
@@ -244,9 +252,48 @@ h1 {
 		margin-right: 30px;
 		height: 70px;
 		width: 290px;
+
+
+
+
 	}
+
+	& .main-link {
+		white-space: nowrap;
+	}
+
 }
 
 .banner__image {
 	z-index: 1;
+	max-width: 649px;
+	//max-width: 649px;
 }
+
+.banners__buttons {
+	position: absolute;
+	bottom: -3px;
+	left: 417px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+
+	& button {
+		& img {
+			transform: scale(1);
+			transition: ransform 0.4s ease;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:hover, &:focus, &:active {
+			outline: none;
+			& img {
+				transform: scale(1.2);
+				transition: ransform 0.4s ease;
+			}
+		}
+	}
+}
+

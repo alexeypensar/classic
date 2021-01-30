@@ -104,7 +104,7 @@
     <div class="banners__wrapper container">
 
 
-        <section class="banners embla container" id="embla">
+        <section class="banners embla" id="emblaHeader">
 
             <div class="embla__container">
                 <article class="banner embla__slide">
@@ -122,12 +122,48 @@
                     </div>
                     <img class="banner__image" src="img/banners/studio.jpg" alt="Натяжные потолки в квартиру-студию">
                 </article>
-                <article class="banner embla__slide">
 
-                </article>
                 <article class="banner embla__slide">
+                    <div class="banner__text">
+                        <h2>Акция</h2>
+                        <h3>"Новострой"</h3>
+                        <p>Жильцам новостроек Москвы
+                            и Московской области
+                            скидка на натяжные потолки <b>15 - 30 %</b>
+                        </p>
 
+                        <div class="banner__links">
+                            <button  class="main-button">Рассчитать стоимость</button>
+
+                        </div>
+                    </div>
+                    <img class="banner__image" src="img/banners/studio.jpg" alt="Счастливая молодая пара">
                 </article>
+
+                <article class="banner embla__slide">
+                    <div class="banner__text">
+                        <h2>Акция</h2>
+                        <h3>Скидка 15% пенсионерам</h3>
+                        <p>Предлагаем специальные условия
+                            и цены для пенсионеров
+                        </p>
+
+                        <div class="banner__links">
+                            <button class="main-button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                    <img class="banner__image" src="img/banners/studio.jpg" alt="Пенсионеры">
+                </article>
+
+            </div>
+
+            <div class="banners__buttons">
+                <button class="embla__button embla__button--prev" type="button" id="headerEmblaPrev">
+                    <img src="img/icons/arrow-left-green.svg" alt="предыдущий слайд">
+                </button>
+                <button class="embla__button embla__button--next" type="button" id="headerEmblaNext">
+                    <img src="img/icons/arrow-right-green.svg" alt="следующий слайд">
+                </button>
             </div>
 
         </section>
@@ -146,8 +182,63 @@
 <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
 </script>
 <script>
-    var emblaNode = document.getElementById("embla");
-    var embla = EmblaCarousel(emblaNode);
+
+    // autoplay for Embla carousel
+    var autoplay = function autoplay(embla, interval) {
+        var timer = 0;
+        var play = function play() {
+            stop();
+            requestAnimationFrame(function () {
+                return timer = window.setTimeout(next, interval);
+            });
+        };
+
+        var stop = function stop() {
+            window.clearTimeout(timer);
+            timer = 0;
+        };
+
+        var next = function next() {
+            if (embla.canScrollNext()) {
+                embla.scrollNext();
+            } else {
+                embla.scrollTo(0);
+            }
+
+            play();
+        };
+
+        return {
+            play: play,
+            stop: stop
+        };
+    };
+
+    //header carousel
+    var emblaNodeHeader = document.getElementById("emblaHeader");
+    const optionsHeader = {
+        loop: "true",
+        align: "start",
+        draggable: false,
+        inViewThreshold: 0
+    };
+    var emblaHeader = EmblaCarousel(emblaNodeHeader, optionsHeader);
+
+    var emblaButtonsHeader = Array.from(document.getElementsByClassName('header__embla'));
+    emblaButtonsHeader.forEach(function (el) {
+        el.addEventListener('click', function () {
+            el.blur();
+        });
+    });
+
+    var prevEmblaHeader = document.getElementById('headerEmblaPrev');
+    prevEmblaHeader.addEventListener('click', emblaHeader.scrollPrev);
+    var nextEmblaHeader = document.getElementById('headerEmblaNext');
+    nextEmblaHeader.addEventListener('click', emblaHeader.scrollNext);
+
+    var autoplayerHeader = autoplay(emblaHeader, 5000);
+    emblaHeader.on("pointerDown", autoplayerHeader.stop);
+    emblaHeader.on("init", autoplayerHeader.play);
 </script>
 
 </body>
