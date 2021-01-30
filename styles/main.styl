@@ -153,3 +153,100 @@ h1 {
 	}
 }
 
+.banners__wrapper {
+	position: relative;
+	background-color: #fff;
+	padding-left: 0;
+	padding-right: 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: transparent;
+		border-left: 10px solid $color-green;
+		border-bottom: 10px solid $color-green;
+		bottom: -3px;
+		left: -70px;
+		width: 458px;
+		height: 490px;
+		z-index:2;
+		overflow: visible;
+		//pointer-events: none;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: transparent;
+		border-right: 10px solid $color-green;
+		border-bottom: 10px solid $color-green;
+		bottom: -3px;
+		right: 5px;
+		width: 310px;
+		height: 490px;
+		overflow: visible;
+		//pointer-events: none;
+		//z-index: -1;
+	}
+}
+
+.banners {
+	width: 100%;
+
+
+
+}
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+
+}
+
+.banner__text {
+	padding: 100px 110px 120px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	& h2 {
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+
+	& h3 {
+		font-weight: 600;
+		font-size: 42px;
+		line-height: 130%;
+		color: $color-red;
+		margin-bottom: 20px;
+	}
+
+	& p {
+		font-size: 20px;
+		line-height: 150%;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		margin-bottom: 40px;
+	}
+}
+
+.banner__links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	& .main-button {
+		margin-right: 30px;
+		height: 70px;
+		width: 290px;
+	}
+}
+
+.banner__image {
+	z-index: 1;
+}

@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="styles/main.css">
 
 
-
 </head>
 <body>
 
@@ -65,7 +64,6 @@
     </div>
 
 
-
     <nav class="menu">
 
         <div class="container">
@@ -103,6 +101,37 @@
 </header>
 
 <main>
+    <div class="banners__wrapper container">
+
+
+        <section class="banners embla container" id="embla">
+
+            <div class="embla__container">
+                <article class="banner embla__slide">
+                    <div class="banner__text">
+                        <h2>Готовые решения</h2>
+                        <h3>Натяжные потолки в квартиру-студию</h3>
+                        <p>38 м<sup>2</sup> "под ключ", 4 помещения
+                            (ванная, кухня, коридор, гостиная)
+                        </p>
+
+                        <div class="banner__links">
+                            <a href="" class="main-button">Подробнее о проекте</a>
+                            <a href="" class="main-link">Смотреть все</a>
+                        </div>
+                    </div>
+                    <img class="banner__image" src="img/banners/studio.jpg" alt="Натяжные потолки в квартиру-студию">
+                </article>
+                <article class="banner embla__slide">
+
+                </article>
+                <article class="banner embla__slide">
+
+                </article>
+            </div>
+
+        </section>
+    </div>
 
 
 </main>
@@ -113,5 +142,13 @@
 
 
 <script src="js/script.js"></script>
+
+<script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
+</script>
+<script>
+    var emblaNode = document.getElementById("embla");
+    var embla = EmblaCarousel(emblaNode);
+</script>
+
 </body>
 </html>

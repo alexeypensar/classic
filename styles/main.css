@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   border: 1px solid #3f94d5;
   outline: none;
+  text-decoration: none;
 }
 .main-button_transparent {
   background-color: #fff;
@@ -70,6 +71,16 @@ input[type="radio"].visually-hidden {
 }
 .main-button:hover {
   cursor: pointer;
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  min-width: 100%;
 }
 @media screen and (max-width: 1439.98px) {
   .container {
@@ -212,4 +223,83 @@ h1 {
   position: absolute;
   right: 0;
   top: 0;
+}
+.banners__wrapper {
+  position: relative;
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+.banners__wrapper::before {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  border-left: 10px solid #07b52d;
+  border-bottom: 10px solid #07b52d;
+  bottom: -3px;
+  left: -70px;
+  width: 458px;
+  height: 490px;
+  z-index: 2;
+  overflow: visible;
+}
+.banners__wrapper::after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  border-right: 10px solid #07b52d;
+  border-bottom: 10px solid #07b52d;
+  bottom: -3px;
+  right: 5px;
+  width: 310px;
+  height: 490px;
+  overflow: visible;
+}
+.banners {
+  width: 100%;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.banner__text {
+  padding: 100px 110px 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.banner__text h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.banner__text h3 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 130%;
+  color: #f04438;
+  margin-bottom: 20px;
+}
+.banner__text p {
+  font-size: 20px;
+  line-height: 150%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 40px;
+}
+.banner__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner__links .main-button {
+  margin-right: 30px;
+  height: 70px;
+  width: 290px;
+}
+.banner__image {
+  z-index: 1;
 }
