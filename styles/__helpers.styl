@@ -14,3 +14,43 @@
 }
 
 
+.main-link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: $color-blue;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $color-blue;
+	}
+}
+
+.main-button {
+	color: #FFFFFF;
+	background-color: $color-blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 18px;
+	border: 1px solid $color-blue;
+	outline: none;
+
+	&_transparent {
+		background-color: #fff;
+		border: 1px solid $color-blue;
+		color: $color-black;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
