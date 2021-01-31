@@ -468,4 +468,38 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.sales__item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 10px solid #07b52d;
+}
+.sales__text {
+  padding-top: 65px;
+  padding-left: 110px;
+  padding-bottom: 65px;
+  padding-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sales__text h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.sales__text h3 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 130%;
+  color: #f04438;
+  margin-bottom: 20px;
+}
+.sales__text p {
+  margin-bottom: 40px;
 }
