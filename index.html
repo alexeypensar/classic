@@ -214,6 +214,29 @@
         </section>
     </div>
 
+    <section class="sales container">
+
+        <div class="sales__header">
+            <a href="" class="main-link">Все акции</a>
+        </div>
+
+        <div class="sales__carousel">
+            <article class="sales__item">
+                <div class="sales__text">
+                    <h2>Акция</h2>
+                    <h3>Скидки 15% пенсионерам</h3>
+                    <p>Предлагаем специальные условия
+                        и цены для пенсионеров</p>
+                    <button class="main-button">Рассчитать стоимость</button>
+                </div>
+                <img src="img/banners/granny.jpg" alt="Счастливая пожилая пара">
+            </article>
+        </div>
+
+
+
+    </section>
+
 
 
 
@@ -262,28 +285,35 @@
     };
 
     //header carousel
-    var emblaNodeHeader = document.getElementById("emblaHeader");
+
+    //making embla carousel for all carousels
+
+    // let carousel = function(cName, cId, cOptions) {
+    //
+    // };
+
+    let emblaNodeHeader = document.getElementById("emblaHeader");
     const optionsHeader = {
         loop: "true",
         align: "start",
         draggable: false,
         inViewThreshold: 0
     };
-    var emblaHeader = EmblaCarousel(emblaNodeHeader, optionsHeader);
+    let emblaHeader = EmblaCarousel(emblaNodeHeader, optionsHeader);
 
-    var emblaButtonsHeader = Array.from(document.getElementsByClassName('header__embla'));
+    const emblaButtonsHeader = Array.from(document.getElementsByClassName('header__embla'));
     emblaButtonsHeader.forEach(function (el) {
         el.addEventListener('click', function () {
             el.blur();
         });
     });
 
-    var prevEmblaHeader = document.getElementById('headerEmblaPrev');
+    const prevEmblaHeader = document.getElementById('headerEmblaPrev');
     prevEmblaHeader.addEventListener('click', emblaHeader.scrollPrev);
-    var nextEmblaHeader = document.getElementById('headerEmblaNext');
+    const nextEmblaHeader = document.getElementById('headerEmblaNext');
     nextEmblaHeader.addEventListener('click', emblaHeader.scrollNext);
 
-    var autoplayerHeader = autoplay(emblaHeader, 5000);
+    const autoplayerHeader = autoplay(emblaHeader, 5000);
     emblaHeader.on("pointerDown", autoplayerHeader.stop);
     emblaHeader.on("init", autoplayerHeader.play);
 </script>
