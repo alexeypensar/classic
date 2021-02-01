@@ -503,3 +503,20 @@ h1 {
 .sales__text p {
   margin-bottom: 40px;
 }
+.calculator__wrapper {
+  width: 100%;
+  background-color: #e8f5f3;
+}
+.calculator {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.calculator .section__heading {
+  margin-bottom: 35px;
+}
+.calculator__steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
