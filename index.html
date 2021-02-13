@@ -252,14 +252,31 @@
                         </div>
 
                         <div class="calculator__inputs">
-                            <fieldset>
-                                <legend>ПВХ</legend>
-                                <label><input type="radio">Classic</label>
-                                <label><input type="radio">Premium</label>
-                                <label><input type="radio">Evolution</label>
-                                <label><input type="radio">Pongs</label>
-                                <label><input type="radio">Teqtum</label>
-                            </fieldset>
+                            <div class="calculator__inputs_left">
+                                <fieldset>
+                                    <legend>ПВХ</legend>
+                                    <label><input name="material" value="pvhClassic" type="radio" checked>Classic</label>
+                                    <label><input name="material" value="pvhPremium" type="radio">Premium</label>
+                                    <label><input name="material" value="pvhEvolution" type="radio">Evolution</label>
+                                    <label><input name="material" value="pvhPongs" type="radio">Pongs</label>
+                                    <label><input name="material" value="pvhTeqtum" type="radio">Teqtum</label>
+                                </fieldset>
+
+                            </div>
+
+                            <div class="calculator__inputs_right">
+                                <fieldset>
+                                    <legend>Ткань</legend>
+                                    <label><input name="material" value="tkanDPremium" type="radio">D-Premium</label>
+                                    <label><input name="material" value="tkanDClipso" type="radio">Clipso</label>
+                                    <label><input name="material" value="tkanDCerutti" type="radio">Cerutti</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>ПВХ без нагрева</legend>
+                                    <label><input name="material" value="pvhGold" type="radio">Gold stretch</label>
+                                </fieldset>
+                            </div>
+
 
 
                         </div>
