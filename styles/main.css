@@ -520,3 +520,61 @@ h1 {
   justify-content: space-between;
   align-items: flex-start;
 }
+.calculator__step {
+  border: 10px solid #07b52d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.calculator__heading {
+  height: 85px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #07b52d;
+}
+.calculator__heading span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  color: #07b52d;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 13px;
+  margin-left: 30px;
+}
+.calculator__heading h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+.calculator__inputs {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.calculator__inputs fieldset {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+}
+.calculator__inputs fieldset legend {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.calculator__inputs fieldset label {
+  font-size: 16px;
+  line-height: 19px;
+}

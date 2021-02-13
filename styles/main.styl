@@ -495,3 +495,66 @@ h1 {
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
+.calculator__step {
+	border: 10px solid $color-green;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.calculator__heading {
+	height: 85px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: $color-green;
+	& span {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #FFFFFF;
+		border: 1px solid #CBCBCB;
+		color: $color-green;
+		border-radius: 50%;
+		font-weight: 600;
+		font-size: 24px;
+		margin-right: 13px;
+		margin-left: 30px;
+	}
+	& h3 {
+		font-weight: 600;
+		font-size: 24px;
+		color: #FFFFFF;
+	}
+}
+
+.calculator__inputs {
+	background-color: #ffffff;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	& fieldset {
+		display: flex;
+		flex-direction: column;
+		border-style: none;
+
+		& legend {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 21px;
+		}
+		& label {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+}
