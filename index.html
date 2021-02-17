@@ -243,56 +243,84 @@
             <h2 class="section__heading">Рассчитайте стоимость потолка с установкой</h2>
 
 
+            <form class="calculator__steps" action="calc.php">
+                <article class="calculator__step calculator__step_1">
+                    <div class="calculator__heading">
+                        <span>1</span>
+                        <h3>Материал</h3>
+                    </div>
 
-                <form class="calculator__steps" action="calc.php">
-                    <article class="calculator__step calculator__step_1">
-                        <div class="calculator__heading">
-                            <span>1</span>
-                            <h3>Материал</h3>
-                        </div>
-
-                        <div class="calculator__inputs">
-                            <div class="calculator__inputs_left">
-                                <fieldset>
-                                    <legend>ПВХ</legend>
-                                    <label><input name="material" value="pvhClassic" type="radio" checked>Classic</label>
-                                    <label><input name="material" value="pvhPremium" type="radio">Premium</label>
-                                    <label><input name="material" value="pvhEvolution" type="radio">Evolution</label>
-                                    <label><input name="material" value="pvhPongs" type="radio">Pongs</label>
-                                    <label><input name="material" value="pvhTeqtum" type="radio">Teqtum</label>
-                                </fieldset>
-
-                            </div>
-
-                            <div class="calculator__inputs_right">
-                                <fieldset>
-                                    <legend>Ткань</legend>
-                                    <label><input name="material" value="tkanDPremium" type="radio">D-Premium</label>
-                                    <label><input name="material" value="tkanDClipso" type="radio">Clipso</label>
-                                    <label><input name="material" value="tkanDCerutti" type="radio">Cerutti</label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>ПВХ без нагрева</legend>
-                                    <label><input name="material" value="pvhGold" type="radio">Gold stretch</label>
-                                </fieldset>
-                            </div>
-
-
+                    <div class="calculator__inputs">
+                        <div class="calculator__inputs_left">
+                            <fieldset>
+                                <legend>ПВХ</legend>
+                                <label><input name="material" value="pvhClassic" type="radio" checked>Classic</label>
+                                <label><input name="material" value="pvhPremium" type="radio">Premium</label>
+                                <label><input name="material" value="pvhEvolution" type="radio">Evolution</label>
+                                <label><input name="material" value="pvhPongs" type="radio">Pongs</label>
+                                <label><input name="material" value="pvhTeqtum" type="radio">Teqtum</label>
+                            </fieldset>
 
                         </div>
 
-                    </article>
+                        <div class="calculator__inputs_right">
+                            <fieldset>
+                                <legend>Ткань</legend>
+                                <label><input name="material" value="tkanDPremium" type="radio">D-Premium</label>
+                                <label><input name="material" value="tkanDClipso" type="radio">Clipso</label>
+                                <label><input name="material" value="tkanDCerutti" type="radio">Cerutti</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>ПВХ без нагрева</legend>
+                                <label><input name="material" value="pvhGold" type="radio">Gold stretch</label>
+                            </fieldset>
+                        </div>
 
-                    <article class="calculator__step calculator__step_2">
+
+                    </div>
+
+                </article>
+
+                <article class="calculator__step calculator__step_2">
+
+                    <div class="calculator__heading">
+                        <span>2</span>
+                        <h3>Помещение</h3>
+                    </div>
+
+                    <div class="calculator__inputs calculator__plus-minus">
+                        <fieldset>
+                            <legend>Площадь, м<sup>2</sup></legend>
+
+                            <div class="calculator__buttons">
+                                <button class="calculator__minus" id="calculatorSquareMinus">-</button>
+                                <span class="calculator__number" id="calculatorSquareCount">0</span>
+                                <button class="calculator__plus" id="calculatorSquarePlus">+</button>
+                            </div>
+
+                        </fieldset>
 
 
-                    </article>
-                    <article class="calculator__step calculator__step_3">
+                        <fieldset>
+                            <legend>Углы<sup>*</sup>, шт</legend>
+                        </fieldset>
+                        <div class="calculator__buttons">
+                            <button class="calculator__minus" id="calculatorCornersMinus">-</button>
+                            <span class="calculator__number" id="calculatorCornersCount">4</span>
+                            <button class="calculator__plus" id="calculatorCornersPlus">+</button>
+                        </div>
+                        <p class="calculator__buttons_green">*4 угла бесплатно</p>
 
 
-                    </article>
-                </form>
+                    </div>
 
+
+                </article>
+                <article class="calculator__step calculator__step_3">
+
+
+                </article>
+            </form>
 
 
         </section>

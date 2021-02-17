@@ -502,6 +502,8 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	height: 427px;
+	width: 31%;
 }
 
 .calculator__heading {
@@ -536,25 +538,96 @@ h1 {
 
 .calculator__inputs {
 	background-color: #ffffff;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
+	padding: 40px 30px;
+	height: 100%;
+
+	&_left {
+		margin-right: 50px;
+	}
 
 	& fieldset {
 		display: flex;
 		flex-direction: column;
 		border-style: none;
+		padding: 0;
+		margin: 0;
 
 		& legend {
 			font-weight: 600;
 			font-size: 18px;
 			line-height: 21px;
+			margin-bottom: 20px;
+			padding: 0;
 		}
 		& label {
 			font-size: 16px;
 			line-height: 19px;
+			margin-bottom: 20px;
+		}
+
+		& input {
+			margin-left: 0;
 		}
 	}
 }
+
+.calculator__plus-minus {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+
+	& sup {
+		color: $color-green;
+	}
+
+}
+
+.calculator__buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 22px;
+
+}
+
+.calculator__minus, .calculator__plus {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: 1px solid $color-green;
+	background-color: transparent;
+
+	&:disabled {
+		border: 1px solid $color-gray;
+		color: $color-gray;
+	}
+}
+
+.calculator__number {
+	font-weight: 600;
+	font-size: 18px;
+	margin-left: 36px;
+	margin-right: 36px;
+}
+
+.calculator__buttons_green {
+	font-weight: 500;
+	font-size: 16px;
+	color: $color-green;
+	margin-top: 17px;
+}
+
+
+
+
+
