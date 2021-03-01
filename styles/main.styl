@@ -528,6 +528,7 @@ h1 {
 		font-size: 24px;
 		margin-right: 13px;
 		margin-left: 30px;
+		font-feature-settings: 'pnum' on, 'lnum' on;
 	}
 	& h3 {
 		font-weight: 600;
@@ -546,7 +547,7 @@ h1 {
 	height: 100%;
 
 	&_left {
-		margin-right: 50px;
+		margin-right: 45px;
 	}
 
 	& fieldset {
@@ -556,10 +557,12 @@ h1 {
 		padding: 0;
 		margin: 0;
 
+
+
 		& legend {
 			font-weight: 600;
 			font-size: 18px;
-			line-height: 21px;
+			line-height: 1;
 			margin-bottom: 20px;
 			padding: 0;
 		}
@@ -571,19 +574,34 @@ h1 {
 
 		& input {
 			margin-left: 0;
+			margin-right: 8px;
+			//margin-top: 0;
 		}
+	}
+}
+
+.calculator__step_2, .calculator__step_3 {
+	& fieldset:first-child {
+		margin-bottom: 45px;
+	}
+}
+
+.calculator__step_2 {
+	& fieldset:nth-child(2) {
+		margin-top: -8px;
 	}
 }
 
 .calculator__plus-minus {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
 
-	& sup {
+	& fieldset:not(:first-child) sup {
 		color: $color-green;
+
 	}
 
 }
@@ -593,7 +611,7 @@ h1 {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 22px;
+	//margin-top: 22px;
 
 }
 
@@ -606,10 +624,17 @@ h1 {
 	outline: none;
 	border: 1px solid $color-green;
 	background-color: transparent;
+	font-size: 32px;
+	color: $color-gray;
+	line-height: 1;
 
 	&:disabled {
-		border: 1px solid $color-gray;
-		color: $color-gray;
+		border: 1px solid $color-lightgray;
+		color: $color-lightgray;
+
+		&:hover, &:focus {
+			cursor: not-allowed;
+		}
 	}
 }
 
@@ -618,6 +643,7 @@ h1 {
 	font-size: 18px;
 	margin-left: 36px;
 	margin-right: 36px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .calculator__buttons_green {
@@ -628,6 +654,51 @@ h1 {
 }
 
 
+.calculator__results {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 43px;
 
+	& p {
+		width: 38%;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 130%;
 
+	}
 
+	& .main-button {
+		width: 238px;
+		height: 70px;
+	}
+}
+
+.calculator__result {
+	margin-left: auto;
+	margin-right: 34px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		height: 3px;
+		width: 130px;
+		background-color: $color-green;
+		left: -144px;
+		top: 10px;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		height: 3px;
+		width: 40px;
+		background-color: $color-green;
+		left: -54px;
+		top: 18px;
+	}
+}

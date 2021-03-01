@@ -293,7 +293,7 @@
                             <legend>Площадь, м<sup>2</sup></legend>
 
                             <div class="calculator__buttons">
-                                <button class="calculator__minus" id="calculatorSquareMinus">-</button>
+                                <button class="calculator__minus" id="calculatorSquareMinus" disabled>-</button>
                                 <span class="calculator__number" id="calculatorSquareCount">0</span>
                                 <button class="calculator__plus" id="calculatorSquarePlus">+</button>
                             </div>
@@ -302,14 +302,14 @@
 
 
                         <fieldset>
-                            <legend>Углы<sup>*</sup>, шт</legend>
+                            <legend>Углы<sup>*</sup>, шт.</legend>
                         </fieldset>
                         <div class="calculator__buttons">
-                            <button class="calculator__minus" id="calculatorCornersMinus">-</button>
+                            <button class="calculator__minus" id="calculatorCornersMinus" disabled>-</button>
                             <span class="calculator__number" id="calculatorCornersCount">4</span>
                             <button class="calculator__plus" id="calculatorCornersPlus">+</button>
                         </div>
-                        <p class="calculator__buttons_green">*4 угла бесплатно</p>
+                        <p class="calculator__buttons_green">*4 угла бесплатно!</p>
 
 
                     </div>
@@ -317,10 +317,45 @@
 
                 </article>
                 <article class="calculator__step calculator__step_3">
+                    <div class="calculator__heading">
+                        <span>3</span>
+                        <h3>Освещение</h3>
+                    </div>
 
+                    <div class="calculator__inputs calculator__plus-minus">
+                        <fieldset>
+                            <legend>Светильники, шт.</legend>
+
+                            <div class="calculator__buttons">
+                                <button class="calculator__minus" id="calculatorLightsMinus" disabled>-</button>
+                                <span class="calculator__number" id="calculatorLightsCount">0</span>
+                                <button class="calculator__plus" id="calculatorLightsPlus">+</button>
+                            </div>
+
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Люстры, шт.</legend>
+                        </fieldset>
+                        <div class="calculator__buttons">
+                            <button class="calculator__minus" id="calculatorLights2Minus" disabled>-</button>
+                            <span class="calculator__number" id="calculatorLights2Count">0</span>
+                            <button class="calculator__plus" id="calculatorLights2Plus">+</button>
+                        </div>
+
+
+
+                    </div>
 
                 </article>
             </form>
+
+            <div class="calculator__results">
+                <p>Если введённые вами параметры верны, то это окончательная стоимость полотен с установкой! Фактуру, цвет, аксессуары можно выбрать по образцам у замерщика.</p>
+                <span class="calculator__result">520 рублей</span>
+                <button class="main-button">Оформить заказ</button>
+            </div>
 
 
         </section>
