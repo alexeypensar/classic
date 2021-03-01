@@ -55,14 +55,24 @@ button:hover {
 	outline: none;
 	text-decoration: none
 
+
+
+	&:hover, &:focus {
+		cursor: pointer;
+		background-color: #FFFFFF;
+		color: $color-blue;
+		transition: all 0.4s ease;
+	}
 	&_transparent {
 		background-color: #fff;
 		border: 1px solid $color-blue;
 		color: $color-black;
-	}
 
-	&:hover {
-		cursor: pointer;
+		&:hover, &:focus {
+			color: #FFFFFF;
+			background-color: $color-blue;
+			transition: all 0.4s ease;
+		}
 	}
 }
 

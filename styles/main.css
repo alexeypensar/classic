@@ -71,13 +71,23 @@ button:hover {
   outline: none;
   text-decoration: none;
 }
+.main-button:hover,
+.main-button:focus {
+  cursor: pointer;
+  background-color: #fff;
+  color: #3f94d5;
+  transition: all 0.4s ease;
+}
 .main-button_transparent {
   background-color: #fff;
   border: 1px solid #3f94d5;
   color: #253238;
 }
-.main-button:hover {
-  cursor: pointer;
+.main-button_transparent:hover,
+.main-button_transparent:focus {
+  color: #fff;
+  background-color: #3f94d5;
+  transition: all 0.4s ease;
 }
 .embla {
   overflow: hidden;
