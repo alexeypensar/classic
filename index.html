@@ -254,11 +254,11 @@
                         <div class="calculator__inputs_left">
                             <fieldset>
                                 <legend>ПВХ</legend>
-                                <label><input name="material" value="pvhClassic" type="radio" checked>Classic</label>
-                                <label><input name="material" value="pvhPremium" type="radio">Premium</label>
-                                <label><input name="material" value="pvhEvolution" type="radio">Evolution</label>
-                                <label><input name="material" value="pvhPongs" type="radio">Pongs</label>
-                                <label><input name="material" value="pvhTeqtum" type="radio">Teqtum</label>
+                                <label><input class="calculator__input" name="material" value="pvhClassic" type="radio" checked>Classic</label>
+                                <label><input class="calculator__input" name="material" value="pvhPremium" type="radio">Premium</label>
+                                <label><input class="calculator__input" name="material" value="pvhEvolution" type="radio">Evolution</label>
+                                <label><input class="calculator__input" name="material" value="pvhPongs" type="radio">Pongs</label>
+                                <label><input class="calculator__input" name="material" value="pvhTeqtum" type="radio">Teqtum</label>
                             </fieldset>
 
                         </div>
@@ -266,13 +266,13 @@
                         <div class="calculator__inputs_right">
                             <fieldset>
                                 <legend>Ткань</legend>
-                                <label><input name="material" value="tkanDPremium" type="radio">D-Premium</label>
-                                <label><input name="material" value="tkanDClipso" type="radio">Clipso</label>
-                                <label><input name="material" value="tkanDCerutti" type="radio">Cerutti</label>
+                                <label><input class="calculator__input" name="material" value="tkanDPremium" type="radio">D-Premium</label>
+                                <label><input class="calculator__input" name="material" value="tkanDClipso" type="radio">Clipso</label>
+                                <label><input class="calculator__input" name="material" value="tkanDCerutti" type="radio">Cerutti</label>
                             </fieldset>
                             <fieldset>
                                 <legend>ПВХ без нагрева</legend>
-                                <label><input name="material" value="pvhGold" type="radio">Gold stretch</label>
+                                <label><input class="calculator__input" name="material" value="pvhGold" type="radio">Gold stretch</label>
                             </fieldset>
                         </div>
 
@@ -289,27 +289,28 @@
                     </div>
 
                     <div class="calculator__inputs calculator__plus-minus">
-                        <fieldset>
+                        <fieldset class="calculator__fieldset">
                             <legend>Площадь, м<sup>2</sup></legend>
 
                             <div class="calculator__buttons">
-                                <button class="calculator__minus" id="calculatorSquareMinus" disabled>-</button>
+                                <button type="button" class="calculator__minus" id="calculatorSquareMinus" disabled>-</button>
                                 <span class="calculator__number" id="calculatorSquareCount">0</span>
-                                <button class="calculator__plus" id="calculatorSquarePlus">+</button>
+                                <button type="button" class="calculator__plus" id="calculatorSquarePlus">+</button>
                             </div>
 
                         </fieldset>
 
 
-                        <fieldset>
+                        <fieldset class="calculator__fieldset">
                             <legend>Углы<sup>*</sup>, шт.</legend>
+
+                            <div class="calculator__buttons">
+                                <button type="button" class="calculator__minus" id="calculatorCornersMinus" disabled>-</button>
+                                <span class="calculator__number" id="calculatorCornersCount">4</span>
+                                <button type="button" class="calculator__plus" id="calculatorCornersPlus">+</button>
+                            </div>
+                            <p class="calculator__buttons_green">*4 угла бесплатно!</p>
                         </fieldset>
-                        <div class="calculator__buttons">
-                            <button class="calculator__minus" id="calculatorCornersMinus" disabled>-</button>
-                            <span class="calculator__number" id="calculatorCornersCount">4</span>
-                            <button class="calculator__plus" id="calculatorCornersPlus">+</button>
-                        </div>
-                        <p class="calculator__buttons_green">*4 угла бесплатно!</p>
 
 
                     </div>
@@ -323,26 +324,27 @@
                     </div>
 
                     <div class="calculator__inputs calculator__plus-minus">
-                        <fieldset>
+                        <fieldset class="calculator__fieldset">
                             <legend>Светильники, шт.</legend>
 
                             <div class="calculator__buttons">
-                                <button class="calculator__minus" id="calculatorLightsMinus" disabled>-</button>
+                                <button type="button" class="calculator__minus" id="calculatorLightsMinus" disabled>-</button>
                                 <span class="calculator__number" id="calculatorLightsCount">0</span>
-                                <button class="calculator__plus" id="calculatorLightsPlus">+</button>
+                                <button type="button" class="calculator__plus" id="calculatorLightsPlus">+</button>
                             </div>
 
                         </fieldset>
 
 
-                        <fieldset>
+                        <fieldset class="calculator__fieldset">
                             <legend>Люстры, шт.</legend>
+
+                            <div class="calculator__buttons">
+                                <button type="button" class="calculator__minus" id="calculatorLights2Minus" disabled>-</button>
+                                <span class="calculator__number" id="calculatorLights2Count">0</span>
+                                <button type="button" class="calculator__plus" id="calculatorLights2Plus">+</button>
+                            </div>
                         </fieldset>
-                        <div class="calculator__buttons">
-                            <button class="calculator__minus" id="calculatorLights2Minus" disabled>-</button>
-                            <span class="calculator__number" id="calculatorLights2Count">0</span>
-                            <button class="calculator__plus" id="calculatorLights2Plus">+</button>
-                        </div>
 
 
 

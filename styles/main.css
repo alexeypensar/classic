@@ -626,6 +626,7 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .calculator__minus,
 .calculator__plus {
@@ -652,12 +653,16 @@ h1 {
 .calculator__plus:disabled:focus {
   cursor: not-allowed;
 }
+.calculator__minus {
+  margin-right: 66px;
+}
 .calculator__number {
   font-weight: 600;
   font-size: 18px;
-  margin-left: 36px;
-  margin-right: 36px;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  position: absolute;
+  left: 56px;
+  top: 2px;
 }
 .calculator__buttons_green {
   font-weight: 500;
