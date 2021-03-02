@@ -647,6 +647,15 @@ h1 {
   font-size: 32px;
   color: #485f69;
   line-height: 1;
+  transition: all 0.4s ease;
+}
+.calculator__minus:hover,
+.calculator__plus:hover,
+.calculator__minus:focus,
+.calculator__plus:focus {
+  background-color: #07b52d;
+  color: #fff;
+  transition: all 0.4s ease;
 }
 .calculator__minus:disabled,
 .calculator__plus:disabled {
@@ -658,6 +667,8 @@ h1 {
 .calculator__minus:disabled:focus,
 .calculator__plus:disabled:focus {
   cursor: not-allowed;
+  background-color: transparent;
+  color: #cbcbcb;
 }
 .calculator__minus {
   margin-right: 66px;

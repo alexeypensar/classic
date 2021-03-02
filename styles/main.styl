@@ -634,6 +634,13 @@ h1 {
 	font-size: 32px;
 	color: $color-gray;
 	line-height: 1;
+	transition: all 0.4s ease;
+
+	&:hover, &:focus {
+		background-color: $color-green;
+		color: #FFFFFF;
+		transition: all 0.4s ease;
+	}
 
 	&:disabled {
 		border: 1px solid $color-lightgray;
@@ -641,6 +648,8 @@ h1 {
 
 		&:hover, &:focus {
 			cursor: not-allowed;
+			background-color: transparent;
+			color: $color-lightgray;
 		}
 	}
 }
