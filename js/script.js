@@ -100,3 +100,37 @@ calculatorInteractiveSpans.forEach(function(el) {
     observer.observe(el, config);
 });
 
+
+
+// scroll for steps
+
+const testimonials = document.querySelector('.steps');
+const scroller = testimonials.querySelector('.steps__items');
+const nextBtn = testimonials.querySelector('.btn.next');
+const prevBtn = testimonials.querySelector('.btn.prev');
+const itemWidth = testimonials.querySelector('.step').clientWidth;
+
+nextBtn.addEventListener('click', scrollToNextItem);
+prevBtn.addEventListener('click', scrollToPrevItem);
+
+function scrollToNextItem() {
+    if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth)) {
+        // Позиция прокрутки не в начале последнего элемента
+        scroller.scrollBy({ left: itemWidth, top: 0, behavior: 'smooth' });
+    } else {
+        // Достигнут последний элемент
+        // Вернёмся к первому элементу, установив положение прокрутки на 0
+        scroller.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+    }
+}
+
+function scrollToPrevItem() {
+    if (scroller.scrollLeft != 0) {
+        // Позиция прокрутки не в начале первого элемента
+        scroller.scrollBy({ left: -itemWidth, top: 0, behavior: 'smooth' });
+    } else {
+        // Это первый элемент (отзыв)
+        // Перейдём к последнему элементу, установив положение прокрутки на ширину «.scroller»
+        scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
+    }
+}
