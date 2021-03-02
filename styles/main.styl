@@ -829,3 +829,60 @@ h1 {
 	}
 }
 
+.advantages {
+	margin-top: 140px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	& .section__heading {
+		margin-bottom: 20px;
+	}
+}
+
+.advantages__headings {
+	width: 49.5%;
+}
+
+.advantages__item {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 30px 30px 0 30px;
+	height: 278px;
+	border: 1px solid $color-lightgray;
+	margin-bottom: 20px;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		left: 70px;
+		width: 140px;
+		height: 3px;
+		background-color: $color-green;
+	}
+
+	&:nth-child(even) {
+		background-color: $color-mediumgray;
+	}
+
+	& img {
+		margin-bottom: 15px;
+	}
+}
+
+.advantages__heading {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 130%;
+	color: $color-green;
+	margin-bottom: 10px;
+}
+
