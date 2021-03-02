@@ -600,9 +600,15 @@ h1 {
   line-height: 19px;
   margin-bottom: 20px;
 }
+.calculator__inputs fieldset label:hover {
+  cursor: pointer;
+}
 .calculator__inputs fieldset input {
   margin-left: 0;
   margin-right: 8px;
+}
+.calculator__inputs fieldset input:hover {
+  cursor: pointer;
 }
 .calculator__step_2 fieldset:first-child,
 .calculator__step_3 fieldset:first-child {
