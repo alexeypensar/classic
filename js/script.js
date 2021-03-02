@@ -67,7 +67,7 @@ const calculator = function() {
     });
 
 
-    calcResult.innerText = (materialPrice * square) + ((corners - 4) * cornerPrice) + (lightPrice * light) + (light2Price * light2);
+    calcResult.innerText = (materialPrice * square) + ((corners - 4) * cornerPrice) + (lightPrice * light) + (light2Price * light2) + ' рублей';
 
 
 };
