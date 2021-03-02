@@ -406,6 +406,9 @@ h1 {
   font-size: 42px;
   line-height: 49px;
 }
+.section__heading_green {
+  color: #07b52d;
+}
 .types__buttons {
   display: flex;
   flex-direction: row;
@@ -730,4 +733,77 @@ h1 {
   background-color: #07b52d;
   left: -54px;
   top: 18px;
+}
+.constructor__wrapper {
+  padding-top: 70px;
+  position: relative;
+  background: url("../img/constructor/bg1.png") no-repeat right top 490px;
+  z-index: 3;
+}
+.constructor__wrapper::after {
+  position: absolute;
+  width: 100%;
+  content: '';
+  height: 300px;
+  background-color: #07b52d;
+  left: 0;
+  bottom: -100px;
+  z-index: 0;
+}
+.constructor {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+.constructor .section__heading {
+  margin-bottom: 15px;
+}
+.constructor .main-link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.constructor__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.constructor__info {
+  font-size: 20px;
+  line-height: 150%;
+}
+.constructor__interactive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: 1px solid #f00;
+}
+.constructor__colorpickers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+.constructor__colorpick {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.constructor__colorpick label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  width: 90%;
+  margin-bottom: 12px;
+}
+.constructor__colorpick + .constructor__colorpick {
+  margin-top: 43px;
 }

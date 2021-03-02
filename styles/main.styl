@@ -337,6 +337,10 @@ h1 {
 	font-size: 42px;
 	line-height: 49px;
 
+	&_green {
+		color: $color-green;
+	}
+
 }
 
 .types__buttons {
@@ -725,3 +729,99 @@ h1 {
 		top: 18px;
 	}
 }
+
+.constructor__wrapper {
+	//background-color: #fff;
+	padding-top: 70px;
+	position: relative;
+	background: url('../img/constructor/bg1.png') no-repeat right top 490px;
+				//url('../img/constructor/bg2.svg') no-repeat left 25% bottom 15px,
+				//url('../img/constructor/bg3.svg') no-repeat left 40% bottom 35px,
+				//url('../img/constructor/bg4.svg') no-repeat right 5px bottom 10px,
+				//url('../img/constructor/bg5.svg') no-repeat right 23%px bottom 50px,
+				//url('../img/constructor/bg6.svg') no-repeat right 32px bottom 5px;
+	z-index: 3;
+
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		content: '';
+		height: 300px;
+		background-color: $color-green;
+		left: 0;
+		bottom: -100px;
+		z-index: 0;
+	}
+}
+
+.constructor {
+	position: relative;
+	z-index: 1;
+	background-color: #FFFFFF;
+	padding-bottom: 15px;
+
+
+	& .section__heading {
+		margin-bottom: 15px;
+	}
+
+	& .main-link {
+		border: none;
+		outline: none;
+		background-color: transparent;
+		margin-top: 15px;
+		margin-right: 10px;
+	}
+}
+
+.constructor__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+.constructor__info {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.constructor__interactive {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	outline: 1px solid red;
+}
+
+
+.constructor__colorpickers {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	//width: 15%;
+	margin-left: 40px;
+}
+
+.constructor__colorpick {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	& label {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		width: 90%;
+		margin-bottom: 12px;
+	}
+
+	& + .constructor__colorpick {
+		margin-top: 43px;
+	}
+}
+

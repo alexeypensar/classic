@@ -360,12 +360,58 @@
                 <button class="main-button">Оформить заказ</button>
             </div>
 
-
         </section>
 
-        <section class="constructor">
+        <section class="constructor__wrapper">
 
+            <form class="constructor container" action="constructor.php">
+
+                <div class="constructor__header">
+                    <div class="constructor__header_left">
+                        <h2 class="section__heading section__heading_green">Воспользуйтесь нашим конструктором</h2>
+                        <p class="constructor__info">для того, чтобы подобрать цвет вашего нового потолка к цвету стен.</p>
+                    </div>
+                    <button type="submit" class="main-link">Выбрали? Заказать!</button>
+
+                </div>
+
+                <div class="constructor__interactive">
+
+                    <div class="constructor__image">
+                        
+                        <img src="img/constructor/constructor1.png" alt="комната">
+
+                    </div>
+
+                    <div class="constructor__colorpickers">
+
+                        <div class="constructor__colorpick">
+                            <label for="constructorCeilingColor1">Выберите цвет потолка 1</label>
+                            <input type="color" id="constructorCeilingColor1">
+                        </div>
+
+                        <div class="constructor__colorpick">
+                            <label for="constructorCeilingColor2">Выберите цвет потолка 2</label>
+                            <input type="color" id="constructorCeilingColor2">
+                        </div>
+
+                        <div class="constructor__colorpick">
+                            <label for="constructorWallColor">Выберите цвет стен</label>
+                            <input type="color" id="constructorWallColor">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </form>
         </section>
+
+
+
+
+
 
     </div>
 
