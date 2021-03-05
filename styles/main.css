@@ -858,21 +858,15 @@ h1 {
   margin-bottom: 40px;
 }
 .steps__items {
-  margin-left: calc((100% - 1200px) / 2 + 15px);
+  margin-left: calc((100% - 1200px) / 2 + 15px) !important;
+  margin-right: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   height: 440px;
+  width: auto;
   background: linear-gradient(to right, #fff 0%, #fff 14%, #07b52d 14.01%, #07b52d 100%);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  z-index: 2;
-  scrollbar-width: 0;
-}
-.steps__items::webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 .step__inner {
   display: flex;
@@ -885,13 +879,15 @@ h1 {
   padding: 0 27px 15px 48px;
   border: 3px solid #07b52d;
   background-color: #fff;
-  margin-right: 30px;
   position: relative;
   z-index: 2;
-  scroll-snap-align: start;
 }
 .step {
   position: relative;
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  height: auto !important;
+  margin-right: 0 !important;
 }
 .step:not(:last-child)::before {
   content: '';
