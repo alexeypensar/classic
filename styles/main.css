@@ -112,6 +112,43 @@ button:hover {
 .embla__button--prev {
   margin-right: 28px;
 }
+.swiper-button-prev1,
+.swiper-button-next1 {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cbcbcb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.swiper-button-prev1 img,
+.swiper-button-next1 img {
+  transform: scale(1);
+  transition: ransform 0.4s ease;
+}
+.swiper-button-prev1:hover,
+.swiper-button-next1:hover {
+  cursor: pointer;
+}
+.swiper-button-prev1:hover,
+.swiper-button-next1:hover,
+.swiper-button-prev1:focus,
+.swiper-button-next1:focus,
+.swiper-button-prev1:active,
+.swiper-button-next1:active {
+  outline: none;
+}
+.swiper-button-prev1:hover img,
+.swiper-button-next1:hover img,
+.swiper-button-prev1:focus img,
+.swiper-button-next1:focus img,
+.swiper-button-prev1:active img,
+.swiper-button-next1:active img {
+  transform: scale(1.2);
+  transition: ransform 0.4s ease;
+}
 @media screen and (max-width: 1439.98px) {
   .container {
     max-width: 1200px;
@@ -947,4 +984,13 @@ h1 {
   color: #485f69;
   position: relative;
   top: -10px;
+}
+.steps__buttons {
+  width: 110px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -490,7 +490,14 @@
     <section class="steps">
         <div class="steps__header container">
             <h2 class="section__heading">Заказать у нас очень легко</h2>
-            <p>тут будут кнопки</p>
+            <div class="steps__buttons">
+                <button class="swiper-button-prev1" type="button">
+                    <img src="img/icons/arrow-left-green.svg" alt="предыдущий слайд">
+                </button>
+                <button class="swiper-button-next1" type="button">
+                    <img src="img/icons/arrow-right-green.svg" alt="следующий слайд">
+                </button>
+            </div>
         </div>
         <div class="steps__items swiper-container">
 
@@ -654,7 +661,7 @@
         // freeMode: true,
         // loop: true,
         // spaceBetween: 15,
-        slidesPerView: 3.5
+        slidesPerView: 3.5,
         // longSwipes: false
 
         // If we need pagination
@@ -663,10 +670,10 @@
         // },
 
         // Navigation arrows
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
+        navigation: {
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1'
+        }
 
         // And if we need scrollbar
         // scrollbar: {
