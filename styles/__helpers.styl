@@ -131,5 +131,22 @@ button:hover {
 		}
 	}
 
+	&:disabled img {
+
+	}
+
+}
+
+.swiper-button-disabled {
+	& img {
+		filter: grayscale(1);
+	}
+
+	&:hover, &:focus {
+		cursor: not-allowed;
+		& img {
+			transform: scale(1);
+		}
+	}
 }
 
