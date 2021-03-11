@@ -1005,3 +1005,59 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+.payment {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.payment .section__heading {
+  margin-bottom: 15px;
+}
+.payment__headings {
+  width: 40%;
+  margin-right: 100px;
+}
+.payment__info {
+  color: #07b52d;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+.payment__methods {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.payment__method {
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.payment__method + .payment__method {
+  margin-left: 110px;
+}
+.payment__method img {
+  margin-bottom: 50px;
+}
+.payment__method figcaption {
+  position: relative;
+}
+.payment__method figcaption::before {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #07b52d;
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
