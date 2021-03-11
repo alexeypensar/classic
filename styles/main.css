@@ -1061,3 +1061,13 @@ h1 {
   left: 0;
   top: -15px;
 }
+.certificates__wrapper {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.certificates__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
