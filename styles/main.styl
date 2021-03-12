@@ -1158,9 +1158,8 @@ h1 {
 
 
 .measure {
-	margin-top: 140px;
+	margin-top: 180px;
 	margin-bottom: 70px;
-	//height: 400px;
 	width: 100%;
 	border: 10px solid $color-green;
 	border-right: 208px solid $color-green;
@@ -1237,5 +1236,62 @@ h1 {
 
 	& label {
 		margin-left: 10px;
+	}
+}
+
+
+.partners {
+	margin-top: 140px;
+	margin-bottom: 70px;
+}
+
+.partners__heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 35px;
+}
+
+.partners__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.partners__invite {
+	display: flex;
+	width: 310px;
+	min-width: 310px;
+	margin-right: 95px;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.partners__items {
+	overflow: hidden;
+	//width: 80%;
+	& .swiper-slide {
+
+		height: 110px;
+		width: 130px;
+		overflow: visible;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 3px solid $color-green;
+
+		//&::after {
+		//	height: 3px;
+		//	width: 130px;
+		//	content: '';
+		//	position: absolute;
+		//	bottom: -5px;
+		//	background-color: $color-green;
+		//}
+		//width: 25%;
 	}
 }

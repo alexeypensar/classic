@@ -648,28 +648,78 @@
         </section>
     </div>
 
-    <form class="measure container">
+    <section class="measure__wrapper container">
+        <form class="measure">
 
-        <h2 class="measure__heading">Вызовите замерщика <span>бесплатно!</span></h2>
+            <h2 class="measure__heading">Вызовите замерщика <span>бесплатно!</span></h2>
 
-        <div class="measure__inputs">
-            <div class="measure__inputs_left">
-                <input type="text" placeholder="Имя" required>
-                <input type="tel" placeholder="Телефон" required>
+            <div class="measure__inputs">
+                <div class="measure__inputs_left">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="measure__inputs_right">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                </div>
+
             </div>
-            <div class="measure__inputs_right">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+
+            <div class="measure__submit">
+                <button class="main-button">Перезвоните мне</button>
+                <input type="checkbox" id="measureCheckbox" required checked>
+                <label for="measureCheckbox">Согласен с условиями <a href="policy.html">обработки персональных данных</a></label>
             </div>
 
+        </form>
+    </section>
+
+    <section class="partners container">
+        <div class="partners__heading">
+            <h2 class="section__heading">Наши партнеры</h2>
+            <div class="steps__buttons">
+                <button class="swiper-button-prev-partners" type="button">
+                    <img src="img/icons/arrow-left-green.svg" alt="предыдущий слайд">
+                </button>
+                <button class="swiper-button-next-partners" type="button">
+                    <img src="img/icons/arrow-right-green.svg" alt="следующий слайд">
+                </button>
+            </div>
         </div>
 
-        <div class="measure__submit">
-            <button class="main-button">Перезвоните мне</button>
-            <input type="checkbox" id="measureCheckbox" required checked>
-            <label for="measureCheckbox">Согласен с условиями <a href="policy.html">обработки персональных данных</a></label>
+        <div class="partners__list">
+            <p class="partners__invite">Приглашаем к сотрудничеству строительные компании, отделочные бригады, прорабов и дизайнеров!</p>
+            <div class="partners__items">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/partners/diodtrade.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/ecola.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/magellan.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/rolikon.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/arte.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/kraab.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/flexy.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/partners/lumfer.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </form>
+
 
 
 <!--    <div class="calc-test__wrapper container">-->
@@ -794,7 +844,20 @@
             nextEl: '.swiper-button-next-certificates',
             prevEl: '.swiper-button-prev-certificates'
         }
-    })
+    });
+
+    const partnersSlider = new Swiper('.partners__items', {
+        slidesPerView: 4,
+        spaceBetween: 47,
+        navigation: {
+            nextEl: '.swiper-button-next-partners',
+            prevEl: '.swiper-button-prev-partners'
+        },
+        autoplay: {
+            delay: 1600,
+        },
+        loop: true
+    });
 </script>
 
 </body>

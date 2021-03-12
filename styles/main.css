@@ -115,7 +115,9 @@ button:hover {
 .swiper-button-prev-steps,
 .swiper-button-next-steps,
 .swiper-button-prev-certificates,
-.swiper-button-next-certificates {
+.swiper-button-next-certificates,
+.swiper-button-prev-partners,
+.swiper-button-next-partners {
   width: 40px;
   height: 40px;
   border: 1px solid #cbcbcb;
@@ -128,42 +130,58 @@ button:hover {
 .swiper-button-prev-steps img,
 .swiper-button-next-steps img,
 .swiper-button-prev-certificates img,
-.swiper-button-next-certificates img {
+.swiper-button-next-certificates img,
+.swiper-button-prev-partners img,
+.swiper-button-next-partners img {
   transform: scale(1);
   transition: ransform 0.4s ease;
 }
 .swiper-button-prev-steps:hover,
 .swiper-button-next-steps:hover,
 .swiper-button-prev-certificates:hover,
-.swiper-button-next-certificates:hover {
+.swiper-button-next-certificates:hover,
+.swiper-button-prev-partners:hover,
+.swiper-button-next-partners:hover {
   cursor: pointer;
 }
 .swiper-button-prev-steps:hover,
 .swiper-button-next-steps:hover,
 .swiper-button-prev-certificates:hover,
 .swiper-button-next-certificates:hover,
+.swiper-button-prev-partners:hover,
+.swiper-button-next-partners:hover,
 .swiper-button-prev-steps:focus,
 .swiper-button-next-steps:focus,
 .swiper-button-prev-certificates:focus,
 .swiper-button-next-certificates:focus,
+.swiper-button-prev-partners:focus,
+.swiper-button-next-partners:focus,
 .swiper-button-prev-steps:active,
 .swiper-button-next-steps:active,
 .swiper-button-prev-certificates:active,
-.swiper-button-next-certificates:active {
+.swiper-button-next-certificates:active,
+.swiper-button-prev-partners:active,
+.swiper-button-next-partners:active {
   outline: none;
 }
 .swiper-button-prev-steps:hover img,
 .swiper-button-next-steps:hover img,
 .swiper-button-prev-certificates:hover img,
 .swiper-button-next-certificates:hover img,
+.swiper-button-prev-partners:hover img,
+.swiper-button-next-partners:hover img,
 .swiper-button-prev-steps:focus img,
 .swiper-button-next-steps:focus img,
 .swiper-button-prev-certificates:focus img,
 .swiper-button-next-certificates:focus img,
+.swiper-button-prev-partners:focus img,
+.swiper-button-next-partners:focus img,
 .swiper-button-prev-steps:active img,
 .swiper-button-next-steps:active img,
 .swiper-button-prev-certificates:active img,
-.swiper-button-next-certificates:active img {
+.swiper-button-next-certificates:active img,
+.swiper-button-prev-partners:active img,
+.swiper-button-next-partners:active img {
   transform: scale(1.2);
   transition: ransform 0.4s ease;
 }
@@ -1112,7 +1130,7 @@ h1 {
   z-index: 2;
 }
 .measure {
-  margin-top: 140px;
+  margin-top: 180px;
   margin-bottom: 70px;
   width: 100%;
   border: 10px solid #07b52d;
@@ -1181,4 +1199,43 @@ h1 {
 }
 .measure__submit label {
   margin-left: 10px;
+}
+.partners {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+.partners__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 35px;
+}
+.partners__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.partners__invite {
+  display: flex;
+  width: 310px;
+  min-width: 310px;
+  margin-right: 95px;
+  font-size: 20px;
+  line-height: 150%;
+}
+.partners__items {
+  overflow: hidden;
+}
+.partners__items .swiper-slide {
+  height: 110px;
+  width: 130px;
+  overflow: visible;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #07b52d;
 }
