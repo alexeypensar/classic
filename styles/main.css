@@ -112,8 +112,10 @@ button:hover {
 .embla__button--prev {
   margin-right: 28px;
 }
-.swiper-button-prev1,
-.swiper-button-next1 {
+.swiper-button-prev-steps,
+.swiper-button-next-steps,
+.swiper-button-prev-certificates,
+.swiper-button-next-certificates {
   width: 40px;
   height: 40px;
   border: 1px solid #cbcbcb;
@@ -123,29 +125,45 @@ button:hover {
   align-items: center;
   background-color: #fff;
 }
-.swiper-button-prev1 img,
-.swiper-button-next1 img {
+.swiper-button-prev-steps img,
+.swiper-button-next-steps img,
+.swiper-button-prev-certificates img,
+.swiper-button-next-certificates img {
   transform: scale(1);
   transition: ransform 0.4s ease;
 }
-.swiper-button-prev1:hover,
-.swiper-button-next1:hover {
+.swiper-button-prev-steps:hover,
+.swiper-button-next-steps:hover,
+.swiper-button-prev-certificates:hover,
+.swiper-button-next-certificates:hover {
   cursor: pointer;
 }
-.swiper-button-prev1:hover,
-.swiper-button-next1:hover,
-.swiper-button-prev1:focus,
-.swiper-button-next1:focus,
-.swiper-button-prev1:active,
-.swiper-button-next1:active {
+.swiper-button-prev-steps:hover,
+.swiper-button-next-steps:hover,
+.swiper-button-prev-certificates:hover,
+.swiper-button-next-certificates:hover,
+.swiper-button-prev-steps:focus,
+.swiper-button-next-steps:focus,
+.swiper-button-prev-certificates:focus,
+.swiper-button-next-certificates:focus,
+.swiper-button-prev-steps:active,
+.swiper-button-next-steps:active,
+.swiper-button-prev-certificates:active,
+.swiper-button-next-certificates:active {
   outline: none;
 }
-.swiper-button-prev1:hover img,
-.swiper-button-next1:hover img,
-.swiper-button-prev1:focus img,
-.swiper-button-next1:focus img,
-.swiper-button-prev1:active img,
-.swiper-button-next1:active img {
+.swiper-button-prev-steps:hover img,
+.swiper-button-next-steps:hover img,
+.swiper-button-prev-certificates:hover img,
+.swiper-button-next-certificates:hover img,
+.swiper-button-prev-steps:focus img,
+.swiper-button-next-steps:focus img,
+.swiper-button-prev-certificates:focus img,
+.swiper-button-next-certificates:focus img,
+.swiper-button-prev-steps:active img,
+.swiper-button-next-steps:active img,
+.swiper-button-prev-certificates:active img,
+.swiper-button-next-certificates:active img {
   transform: scale(1.2);
   transition: ransform 0.4s ease;
 }
@@ -1064,10 +1082,32 @@ h1 {
 .certificates__wrapper {
   margin-top: 70px;
   margin-bottom: 70px;
+  position: relative;
+}
+.certificates__wrapper::after {
+  width: 100%;
+  height: 140px;
+  background: url("../img/certificates/bg/line.png") no-repeat left -30px top 30px, url("../img/certificates/bg/medal.png") no-repeat left 5% bottom 20px, url("../img/certificates/bg/line.png") no-repeat left 12% bottom 35px, url("../img/certificates/bg/medal.png") no-repeat left 15% top 15px, url("../img/certificates/bg/line.png") no-repeat right -15px top 30px, url("../img/certificates/bg/medal.png") no-repeat right 15% top 15px, url("../img/certificates/bg/line.png") no-repeat right 15% bottom 35px, url("../img/certificates/bg/medal.png") no-repeat right 5% bottom 15px, #07b52d;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 55px;
+  content: '';
 }
 .certificates__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.certificates__swiper {
+  margin-top: 40px;
+  overflow: hidden;
+}
+.certificates__swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
 }
