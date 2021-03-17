@@ -1529,6 +1529,17 @@ h1 {
 .footer_right .main-button:first-of-type {
   margin-bottom: 10px;
 }
+.footer_right .main-button:hover,
+.footer_right .main-button:focus {
+  background-color: #f6f6f6;
+}
+.footer_right .main-button_transparent {
+  background-color: #f6f6f6;
+}
+.footer_right .main-button_transparent:hover,
+.footer_right .main-button_transparent:focus {
+  background-color: #3f94d5;
+}
 .footer__link_phone {
   font-weight: 600;
   font-size: 24px;

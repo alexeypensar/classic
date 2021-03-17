@@ -1681,7 +1681,35 @@ h1 {
 		&:first-of-type {
 			margin-bottom: 10px;
 		}
+
+		&:hover, &:focus {
+			background-color: $color-mediumgray;
+		}
+
+
 	}
+	
+	& .main-button_transparent {
+		background-color: $color-mediumgray;
+
+		&:hover, &:focus {
+			background-color: $color-blue;
+
+		}
+	}
+	
+	//& .main-button:not(.main-button_transparent) {
+	//	background-color: transparent;
+	//}
+	//
+	//& .main-button_transparent {
+	//
+	//
+	//
+	//	&:hover, &:focus {
+	//		background-color: $color-blue;
+	//	}
+	//}
 
 }
 
