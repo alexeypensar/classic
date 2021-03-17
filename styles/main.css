@@ -653,6 +653,9 @@ h1 {
 .sales__text p {
   margin-bottom: 40px;
 }
+.sales__carousel {
+  width: 100%;
+}
 .calculator__wrapper {
   width: 100%;
   background-color: #e8f5f3;
@@ -1238,6 +1241,7 @@ h1 {
   height: 160px;
   border: 1px solid #485f69;
   padding: 25px;
+  resize: none;
 }
 .measure__submit {
   display: flex;
