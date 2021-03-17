@@ -89,29 +89,8 @@ button:hover {
   background-color: #3f94d5;
   transition: all 0.4s ease;
 }
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  position: relative;
-  min-width: 100%;
-}
-.embla__button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #cbcbcb;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-}
-.embla__button--prev {
-  margin-right: 28px;
-}
+.swiper-button-prev-header,
+.swiper-button-next-header,
 .swiper-button-prev-steps,
 .swiper-button-next-steps,
 .swiper-button-prev-certificates,
@@ -127,6 +106,8 @@ button:hover {
   align-items: center;
   background-color: #fff;
 }
+.swiper-button-prev-header img,
+.swiper-button-next-header img,
 .swiper-button-prev-steps img,
 .swiper-button-next-steps img,
 .swiper-button-prev-certificates img,
@@ -134,8 +115,10 @@ button:hover {
 .swiper-button-prev-partners img,
 .swiper-button-next-partners img {
   transform: scale(1);
-  transition: ransform 0.4s ease;
+  transition: transform 0.4s ease;
 }
+.swiper-button-prev-header:hover,
+.swiper-button-next-header:hover,
 .swiper-button-prev-steps:hover,
 .swiper-button-next-steps:hover,
 .swiper-button-prev-certificates:hover,
@@ -144,18 +127,24 @@ button:hover {
 .swiper-button-next-partners:hover {
   cursor: pointer;
 }
+.swiper-button-prev-header:hover,
+.swiper-button-next-header:hover,
 .swiper-button-prev-steps:hover,
 .swiper-button-next-steps:hover,
 .swiper-button-prev-certificates:hover,
 .swiper-button-next-certificates:hover,
 .swiper-button-prev-partners:hover,
 .swiper-button-next-partners:hover,
+.swiper-button-prev-header:focus,
+.swiper-button-next-header:focus,
 .swiper-button-prev-steps:focus,
 .swiper-button-next-steps:focus,
 .swiper-button-prev-certificates:focus,
 .swiper-button-next-certificates:focus,
 .swiper-button-prev-partners:focus,
 .swiper-button-next-partners:focus,
+.swiper-button-prev-header:active,
+.swiper-button-next-header:active,
 .swiper-button-prev-steps:active,
 .swiper-button-next-steps:active,
 .swiper-button-prev-certificates:active,
@@ -164,18 +153,24 @@ button:hover {
 .swiper-button-next-partners:active {
   outline: none;
 }
+.swiper-button-prev-header:hover img,
+.swiper-button-next-header:hover img,
 .swiper-button-prev-steps:hover img,
 .swiper-button-next-steps:hover img,
 .swiper-button-prev-certificates:hover img,
 .swiper-button-next-certificates:hover img,
 .swiper-button-prev-partners:hover img,
 .swiper-button-next-partners:hover img,
+.swiper-button-prev-header:focus img,
+.swiper-button-next-header:focus img,
 .swiper-button-prev-steps:focus img,
 .swiper-button-next-steps:focus img,
 .swiper-button-prev-certificates:focus img,
 .swiper-button-next-certificates:focus img,
 .swiper-button-prev-partners:focus img,
 .swiper-button-next-partners:focus img,
+.swiper-button-prev-header:active img,
+.swiper-button-next-header:active img,
 .swiper-button-prev-steps:active img,
 .swiper-button-next-steps:active img,
 .swiper-button-prev-certificates:active img,
@@ -183,7 +178,15 @@ button:hover {
 .swiper-button-prev-partners:active img,
 .swiper-button-next-partners:active img {
   transform: scale(1.2);
-  transition: ransform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+.swiper-button-prev-header {
+  margin-right: 28px;
+}
+.swiper-button-prev-header,
+.swiper-button-next-header {
+  z-index: 3;
+  margin-bottom: 5px;
 }
 .swiper-button-disabled img {
   filter: grayscale(1);
@@ -344,6 +347,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 70px;
+  overflow: visible !important;
 }
 .banners__wrapper::before {
   content: '';
@@ -355,7 +359,6 @@ h1 {
   left: -70px;
   width: 458px;
   height: 490px;
-  z-index: 2;
 }
 .banners__wrapper::after {
   content: '';
