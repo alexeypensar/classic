@@ -315,7 +315,6 @@
             </article>
 
 
-
             <article class="sales__item swiper-slide">
                 <div class="sales__text">
                     <h2>Акция</h2>
@@ -836,7 +835,102 @@
 
 </main>
 
-<footer>
+<footer class="footer__wrapper">
+    <div class="footer container">
+        <section class="footer_left">
+
+            <div class="footer__info">
+                <div class="footer__headings">
+                    <img src="img/footer-logo.png" alt="Классика">
+                    <h2 class="footer__subheading">Натяжные потолки в Москве<br> и Московской области</h2>
+                </div>
+
+                <div class="footer__social">
+                    <h3>Подписывайтесь на наши соц.сети</h3>
+                    <div class="footer__social-links">
+                        <a class="footer__social-link" href="#">
+                            <img src="img/icons/social/instagram.png" alt="Наш инстаграм">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="img/icons/social/facebook.png" alt="Наш фейсбук">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="img/icons/social/ok.png" alt="Группа в одноклассниках">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="img/icons/social/vk.png" alt="Мы вконтакте">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="img/icons/social/youtube.png" alt="Наш ютуб-канал">
+                        </a>
+
+                    </div>
+
+                    <a class="footer__policy" href="policy.html">Политика конфиденциальности</a>
+                    <p class="footer__copyright">ООО Классика. Все права защищены. 2021.</p>
+                </div>
+            </div>
+
+            <nav class="footer__nav">
+                <ul class="footer__nav_left">
+                    <li>
+                        <a class="footer__link_big" href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="footer__link_small" href="#">Потолки</a>
+                    </li>
+                    <li>
+                        <a class="footer__link_small" href="#">Карнизы</a>
+                    </li>
+                    <li>
+                        <a class="footer__link_small" href="#">Освещение</a>
+                    </li>
+                    <li><a class="footer__link_big" href="#">Калькулятор</a></li>
+                    <li><a class="footer__link_big" href="#">Конструктор</a></li>
+                </ul>
+
+                <ul class="footer__nav_right">
+                    <li><a class="footer__link_big" href="#">Услуги</a></li>
+                    <li><a class="footer__link_big" href="#">Готовые решения</a></li>
+                    <li><a class="footer__link_big" href="#">Сравнение</a></li>
+                    <li><a class="footer__link_big" href="#">Акции</a></li>
+                    <li><a class="footer__link_big" href="#">Контакты</a></li>
+                </ul>
+
+
+
+
+            </nav>
+
+
+        </section>
+
+        <aside class="footer_right">
+
+            <h3>Связаться с нами легко:</h3>
+            <a class="footer__link_phone" href="tel:+74957711149">+7 495 77-111-49</a>
+            <a class="footer__link_phone" href="tel:+79287711123">+7 928 77-111-23</a>
+
+            <div class="footer__messengers">
+                <a href="#" class="footer__messenger-link">
+                    <img src="img/icons/messengers/whatsapp.svg" alt="Наш whatsapp">
+                </a>
+                <a href="#" class="footer__messenger-link">
+                    <img src="img/icons/messengers/viber.svg" alt="Наш viber">
+                </a>
+                <a href="#" class="footer__messenger-link">
+                    <img src="img/icons/messengers/telegram.svg" alt="Наш telegram">
+                </a>
+            </div>
+
+            <button class="main-button main-button_transparent" type="button">Заказать звонок</button>
+            <button class="main-button" type="button">Вызвать замерщика</button>
+
+
+
+        </aside>
+    </div>
+
 
 </footer>
 
@@ -993,11 +1087,11 @@
         navigation: {
             nextEl: '.swiper-button-next-partners',
             prevEl: '.swiper-button-prev-partners'
-        },
-        autoplay: {
-            delay: 1600,
-        },
-        loop: true
+        }
+        // autoplay: {
+        //     delay: 1600,
+        // },
+        // loop: true
     });
 
 
