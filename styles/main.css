@@ -103,7 +103,9 @@ button:hover {
 .swiper-button-prev-certificates,
 .swiper-button-next-certificates,
 .swiper-button-prev-partners,
-.swiper-button-next-partners {
+.swiper-button-next-partners,
+.swiper-button-prev-sales,
+.swiper-button-next-sales {
   width: 40px;
   height: 40px;
   border: 1px solid #cbcbcb;
@@ -120,7 +122,9 @@ button:hover {
 .swiper-button-prev-certificates img,
 .swiper-button-next-certificates img,
 .swiper-button-prev-partners img,
-.swiper-button-next-partners img {
+.swiper-button-next-partners img,
+.swiper-button-prev-sales img,
+.swiper-button-next-sales img {
   transform: scale(1);
   transition: transform 0.4s ease;
 }
@@ -131,7 +135,9 @@ button:hover {
 .swiper-button-prev-certificates:hover,
 .swiper-button-next-certificates:hover,
 .swiper-button-prev-partners:hover,
-.swiper-button-next-partners:hover {
+.swiper-button-next-partners:hover,
+.swiper-button-prev-sales:hover,
+.swiper-button-next-sales:hover {
   cursor: pointer;
 }
 .swiper-button-prev-header:hover,
@@ -142,6 +148,8 @@ button:hover {
 .swiper-button-next-certificates:hover,
 .swiper-button-prev-partners:hover,
 .swiper-button-next-partners:hover,
+.swiper-button-prev-sales:hover,
+.swiper-button-next-sales:hover,
 .swiper-button-prev-header:focus,
 .swiper-button-next-header:focus,
 .swiper-button-prev-steps:focus,
@@ -150,6 +158,8 @@ button:hover {
 .swiper-button-next-certificates:focus,
 .swiper-button-prev-partners:focus,
 .swiper-button-next-partners:focus,
+.swiper-button-prev-sales:focus,
+.swiper-button-next-sales:focus,
 .swiper-button-prev-header:active,
 .swiper-button-next-header:active,
 .swiper-button-prev-steps:active,
@@ -157,7 +167,9 @@ button:hover {
 .swiper-button-prev-certificates:active,
 .swiper-button-next-certificates:active,
 .swiper-button-prev-partners:active,
-.swiper-button-next-partners:active {
+.swiper-button-next-partners:active,
+.swiper-button-prev-sales:active,
+.swiper-button-next-sales:active {
   outline: none;
 }
 .swiper-button-prev-header:hover img,
@@ -168,6 +180,8 @@ button:hover {
 .swiper-button-next-certificates:hover img,
 .swiper-button-prev-partners:hover img,
 .swiper-button-next-partners:hover img,
+.swiper-button-prev-sales:hover img,
+.swiper-button-next-sales:hover img,
 .swiper-button-prev-header:focus img,
 .swiper-button-next-header:focus img,
 .swiper-button-prev-steps:focus img,
@@ -176,6 +190,8 @@ button:hover {
 .swiper-button-next-certificates:focus img,
 .swiper-button-prev-partners:focus img,
 .swiper-button-next-partners:focus img,
+.swiper-button-prev-sales:focus img,
+.swiper-button-next-sales:focus img,
 .swiper-button-prev-header:active img,
 .swiper-button-next-header:active img,
 .swiper-button-prev-steps:active img,
@@ -183,7 +199,9 @@ button:hover {
 .swiper-button-prev-certificates:active img,
 .swiper-button-next-certificates:active img,
 .swiper-button-prev-partners:active img,
-.swiper-button-next-partners:active img {
+.swiper-button-next-partners:active img,
+.swiper-button-prev-sales:active img,
+.swiper-button-next-sales:active img {
   transform: scale(1.2);
   transition: transform 0.4s ease;
 }
@@ -205,6 +223,16 @@ button:hover {
 .swiper-button-disabled:hover img,
 .swiper-button-disabled:focus img {
   transform: scale(1);
+}
+.swiper-button-prev-sales {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+}
+.swiper-button-next-sales {
+  position: absolute;
+  top: 50%;
+  right: -60px;
 }
 @media screen and (max-width: 1439.98px) {
   .container {

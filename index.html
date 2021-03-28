@@ -522,6 +522,12 @@
             <a href="" class="main-link">Все акции</a>
         </div>
             <div class="sales__carousel swiper-wrapper">
+                <button class="swiper-button-prev-sales" type="button">
+                    <img src="img/icons/arrow-left-green.svg" alt="предыдущий слайд">
+                </button>
+                <button class="swiper-button-next-sales" type="button">
+                    <img src="img/icons/arrow-right-green.svg" alt="следующий слайд">
+                </button>
                 <article class="sales__item swiper-slide">
                     <div class="sales__text">
                         <h2>Акция</h2>
@@ -1262,12 +1268,12 @@
     const salesSlider = new Swiper('.sales', {
         slidesPerView: 1,
         // spaceBetween: 15,
-        // navigation: {
-        //     nextEl: '.swiper-button-next-header',
-        //     prevEl: '.swiper-button-prev-header'
-        // },
+        navigation: {
+            nextEl: '.swiper-button-next-sales',
+            prevEl: '.swiper-button-prev-sales'
+        },
         autoplay: {
-            delay: 3000,
+            delay: 4000,
         },
         loop: true,
         effect: 'fade',
