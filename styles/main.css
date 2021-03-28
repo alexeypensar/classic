@@ -352,15 +352,33 @@ h1 {
 }
 .menu__li {
   height: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  background-color: #07b52d;
+  transition: background-color 0.3s ease;
+}
+.menu__li:hover,
+.menu__li:focus {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+.menu__li:hover .menu__link,
+.menu__li:focus .menu__link {
+  color: #07b52d;
+  transition: color 0.3s ease;
 }
 .menu__links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 70px;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
 }
 .menu__link {
   font-weight: 600;
@@ -368,17 +386,30 @@ h1 {
   line-height: 21px;
   text-decoration: none;
   color: #fff;
+  min-height: 100%;
   height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: color 0.3s ease;
 }
-.menu__link_arrow {
+.menu__link_arrow svg {
+  margin-left: 8px;
   position: relative;
-  padding-right: 20px;
+  top: 2px;
 }
-.menu__link_arrow::after {
-  content: url("../img/icons/arrow-down-white.svg");
-  position: absolute;
-  right: 0;
-  top: 0;
+.menu__link_arrow svg path {
+  stroke: #fff;
+  transition: stroke 0.3s ease;
+}
+.menu__link_arrow:hover svg path,
+.menu__link_arrow:focus svg path {
+  stroke: #07b52d;
+  transition: stroke 0.3s ease;
 }
 .banners__wrapper {
   position: relative;

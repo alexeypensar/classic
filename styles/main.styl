@@ -149,24 +149,31 @@ h1 {
 	//padding-bottom: 25px;
 	background-color: $color-green;
 
+
 }
 
 .menu__li {
 	height: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	//width: 100%;
-	//padding-left: 44px;
-	//padding-right: 44px;
-	//
-	//&:hover, &:focus {
-	//	background-color: #fff;
-	//	transition: all 0.3s ease;
-	//	& .menu__link {
-	//		color: $color-green;
-	//		transition: all 0.3s ease;
-	//	}
-	//}
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	white-space: nowrap;
+	background-color: $color-green;
+	transition: background-color 0.3s ease;
+
+	&:hover, &:focus {
+		background-color: #fff;
+		transition: background-color 0.3s ease;
+
+		& .menu__link {
+			color: $color-green;
+			transition: color 0.3s ease;
+		}
+	}
+
+
 }
 
 .menu__links {
@@ -174,7 +181,10 @@ h1 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
+	height: 70px;
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+
 
 }
 
@@ -186,19 +196,39 @@ h1 {
 	line-height: 21px;
 	text-decoration: none;
 	color: #FFFFFF;
+	min-height: 100%;
 	height: 100%;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 25px;
+	padding-right: 25px;
+	transition: color 0.3s ease;
+	//width: 100%;
 
 
 }
 
 .menu__link_arrow {
-	position: relative;
-	padding-right: 20px;
-	&::after {
-		content: url('../img/icons/arrow-down-white.svg');
-		position: absolute;
-		right: 0;
-		top: 0;
+
+	& svg {
+		margin-left: 8px;
+		position: relative;
+		top: 2px;
+		& path {
+			stroke: #FFF;
+			transition: stroke 0.3s ease;
+		}
+
+	}
+
+	&:hover, &:focus {
+		& svg path {
+			stroke: $color-green;
+			transition: stroke 0.3s ease;
+		}
 	}
 }
 
@@ -1606,7 +1636,6 @@ h1 {
 	}
 
 	&:hover, &:focus {
-
 		&::after {
 			opacity: 1;
 			transition: opacity 0.3s ease;
