@@ -701,6 +701,9 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  text-decoration: none;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 .types__item h3 {
   font-weight: 600;
@@ -708,13 +711,21 @@ h1 {
   line-height: 21px;
   margin-top: 17px;
   margin-bottom: 5px;
+  text-decoration: none;
+  color: #253238;
 }
 .types__item p {
   font-size: 16px;
   line-height: 19px;
 /* identical to box height */
+  text-decoration: none;
   font-feature-settings: 'pnum' on, 'lnum' on;
   color: #07b52d;
+}
+.types__item:hover,
+.types__item:focus {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 .sales {
   margin-top: 70px;
