@@ -497,7 +497,7 @@ h1 {
 		height: 100px;
 		width: calc((100vw - 1000px)/2);
 		left: 0;
-		top: 55%;
+		top: 310px;
 		background-color: $color-green;
 		z-index: -1;
 	}
@@ -507,7 +507,7 @@ h1 {
 		height: 100px;
 		width: calc((100vw - 1000px)/2);
 		right: 0;
-		top: 55%;
+		top: 310px;
 		background-color: $color-green;
 		z-index: -1;
 	}
@@ -578,7 +578,7 @@ h1 {
 		}
 
 		&:hover, &:focus {
-			pointer-events: none;
+			//pointer-events: none;
 		}
 	}
 
@@ -587,10 +587,15 @@ h1 {
 }
 
 .types__items {
-	display: flex;
+	display: none;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	&_active {
+		display: flex;
+	}
 
 }
 
@@ -602,6 +607,10 @@ h1 {
 	text-decoration: none;
 	transform: translateY(0);
 	transition: transform 0.3s ease;
+	margin-right: 10px;
+	//width: 23%;
+	//margin-right: 15px;
+	margin-bottom: 15px;
 
 
 	& h3 {

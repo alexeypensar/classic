@@ -312,13 +312,13 @@
 
 
             <div class="types__buttons">
-                <button class="types__button types__button_active">По фактуре</button>
-                <button class="types__button">По оформлению</button>
-                <button class="types__button">По цвету</button>
-                <button class="types__button">По типу помещения</button>
+                <button class="types__button types__button_active" id="typesButtonFacture">По фактуре</button>
+                <button class="types__button" id="typesButtonDecor">По оформлению</button>
+                <button class="types__button" id="typesButtonRoom">По цвету</button>
+                <button class="types__button" id="typesButtonColor">По типу помещения</button>
             </div>
 
-            <div class="types__items">
+            <div class="types__items types__items_active" id="typesFacture">
                 <a href="#" class="types__item">
                     <img src="img/ceilings-types/1.jpg" alt="Матовые">
                     <h3>Матовые</h3>
@@ -342,6 +342,175 @@
                     <h3>Сатиновые</h3>
                     <p>от 450 р./м<sup>2</sup></p>
                 </a>
+            </div>
+
+            <div class="types__items" id="typesDecor">
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/1.jpg" alt="Матовые">
+                    <h3>Одноуровневые</h3>
+                    <p>от 450 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/2.jpg" alt="Глянцевые">
+                    <h3>Двухуровневые</h3>
+                    <p>от 1200 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/3.jpg" alt="Тканевые">
+                    <h3>Многоуровневые</h3>
+                    <p>от 2000 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Комбинированные</h3>
+                    <p>от 600 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Бесшовные</h3>
+                    <p>от 450 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Теневые</h3>
+                    <p>от 1100 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Световые</h3>
+                    <p>от 2800 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Парящие</h3>
+                    <p>от 1600 р./м.п.</p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>С контурной подсветкой</h3>
+                    <p>от 1600 р./м.п.</p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Со световыми линиями</h3>
+                    <p>от 2200 р./м.п.</p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>С трековыми системами</h3>
+                    <p>от 2500 р./м.п.</p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Фотопечать</h3>
+                    <p>от 1800 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Звездное небо</h3>
+                    <p>от 70000 р./шт.</p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Перфорированные</h3>
+                    <p>от 2500 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Зеркальные</h3>
+                    <p>от 2000 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Double Vision</h3>
+                    <p>от 4000 р./м<sup>2</sup></p>
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>ПВХ без нагрева</h3>
+                    <p>от 700 р./м<sup>2</sup></p>
+                </a>
+            </div>
+
+            <div class="types__items" id="typesRoom">
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/1.jpg" alt="Матовые">
+                    <h3>Для кухни</h3>
+<!--                    <p>от 430 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/2.jpg" alt="Глянцевые">
+                    <h3>Для спальни</h3>
+<!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/3.jpg" alt="Тканевые">
+                    <h3>Для гостиной</h3>
+<!--                    <p>от 990 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Для ванной</h3>
+<!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Для детской</h3>
+                    <!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Для коридора</h3>
+                    <!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+            </div>
+
+            <div class="types__items" id="typesColor">
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/1.jpg" alt="Матовые">
+                    <h3>Белые</h3>
+                    <!--                    <p>от 430 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/2.jpg" alt="Глянцевые">
+                    <h3>Чёрные</h3>
+                    <!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/3.jpg" alt="Тканевые">
+                    <h3>Цветные</h3>
+                    <!--                    <p>от 990 р./м<sup>2</sup></p>-->
+                </a>
+
+                <a href="#" class="types__item">
+                    <img src="img/ceilings-types/4.jpg" alt="Сатиновые">
+                    <h3>Текстурные</h3>
+                    <!--                    <p>от 450 р./м<sup>2</sup></p>-->
+                </a>
+
             </div>
 
         </section>

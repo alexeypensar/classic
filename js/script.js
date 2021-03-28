@@ -134,3 +134,112 @@ calculatorInteractiveSpans.forEach(function(el) {
 //         scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
 //     }
 // }
+
+
+
+// types ceilings changing
+//
+//
+// typesFacture
+// typesDecor
+// typesRoom
+// typesColor
+
+// .types__items_active
+// .types__button_active
+
+// const typesButtons = Array.from(document.getElementsByClassName('types__button'));
+
+
+
+// typesButtons.forEach(function(el) {
+//
+//       el.addEventListener('click', function() {
+//           if(!el.classList.contains('active')) {
+//               el.classList.toggle('types__button_active');
+//               console.log('добавили');
+//
+//           }
+//
+//           else {
+//               el.classList.toggle('types__button_active');
+//               console.log('убрали');
+//           }
+//       });
+//
+//
+//
+//
+//
+//     // el.addEventListener('click', function() {
+//     //     el.classList.add('types__button_active');
+//     //
+//     //
+//     // });
+//
+//     // typesButtonsActive[0].classList.add('types__button_active');
+//
+// });
+
+
+//
+//
+const typesButtonFacture = document.getElementById('typesButtonFacture');
+const typesButtonDecor = document.getElementById('typesButtonDecor');
+const typesButtonRoom = document.getElementById('typesButtonRoom');
+const typesButtonColor = document.getElementById('typesButtonColor');
+
+const typesFacture = document.getElementById('typesFacture');
+const typesDecor = document.getElementById('typesDecor');
+const typesRoom = document.getElementById('typesRoom');
+const typesColor = document.getElementById('typesColor');
+
+
+typesButtonDecor.addEventListener('click', function() {
+    typesButtonDecor.classList.add('types__button_active');
+    typesButtonFacture.classList.remove('types__button_active');
+    typesButtonRoom.classList.remove('types__button_active');
+    typesButtonColor.classList.remove('types__button_active');
+
+    typesDecor.classList.add('types__items_active');
+    typesFacture.classList.remove('types__items_active');
+    typesRoom.classList.remove('types__items_active');
+    typesColor.classList.remove('types__items_active');
+});
+
+
+typesButtonFacture.addEventListener('click', function() {
+    typesButtonFacture.classList.add('types__button_active');
+    typesButtonDecor.classList.remove('types__button_active');
+    typesButtonRoom.classList.remove('types__button_active');
+    typesButtonColor.classList.remove('types__button_active');
+
+    typesFacture.classList.add('types__items_active');
+    typesDecor.classList.remove('types__items_active');
+    typesRoom.classList.remove('types__items_active');
+    typesColor.classList.remove('types__items_active');
+});
+
+typesButtonRoom.addEventListener('click', function() {
+    typesButtonRoom.classList.add('types__button_active');
+    typesButtonFacture.classList.remove('types__button_active');
+    typesButtonDecor.classList.remove('types__button_active');
+    typesButtonColor.classList.remove('types__button_active');
+
+    typesRoom.classList.add('types__items_active');
+    typesFacture.classList.remove('types__items_active');
+    typesDecor.classList.remove('types__items_active');
+    typesColor.classList.remove('types__items_active');
+});
+
+typesButtonColor.addEventListener('click', function() {
+    typesButtonColor.classList.add('types__button_active');
+    typesButtonFacture.classList.remove('types__button_active');
+    typesButtonRoom.classList.remove('types__button_active');
+    typesButtonDecor.classList.remove('types__button_active');
+
+    typesColor.classList.add('types__items_active');
+    typesFacture.classList.remove('types__items_active');
+    typesRoom.classList.remove('types__items_active');
+    typesDecor.classList.remove('types__items_active');
+});
