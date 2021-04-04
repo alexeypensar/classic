@@ -1810,6 +1810,7 @@ h1 {
   justify-content: flex-start;
   align-items: flex-start;
   width: 310px;
+  margin-right: 40px;
 }
 .ceilings__menu_group {
   display: flex;
@@ -1847,6 +1848,59 @@ h1 {
 }
 .ceilings__link:hover,
 .ceilings__link:focus {
+  color: #3f94d5;
+  transition: color 0.3s ease;
+}
+.ceilings__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.ceilings__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  margin-bottom: 40px;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.ceilings__item h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #253238;
+  transition: color 0.3s ease;
+}
+.ceilings__item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: #253238;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  transition: color 0.3s ease;
+}
+.ceilings__item p sup {
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  transition: color 0.3s ease;
+}
+.ceilings__item:hover,
+.ceilings__item:focus {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+.ceilings__item:hover h3,
+.ceilings__item:focus h3,
+.ceilings__item:hover p,
+.ceilings__item:focus p,
+.ceilings__item:hover sup,
+.ceilings__item:focus sup {
   color: #3f94d5;
   transition: color 0.3s ease;
 }

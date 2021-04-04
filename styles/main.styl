@@ -2016,6 +2016,10 @@ h1 {
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 310px;
+	margin-right: 40px;
+	//position: sticky;
+	//top: 15px;
+	//left: 0;
 }
 
 .ceilings__menu_group {
@@ -2058,5 +2062,58 @@ h1 {
 	}
 }
 
+.ceilings__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	//margin-bottom: 140px;
+	width: 100%;
+}
+
+.ceilings__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-decoration: none;
+	margin-bottom: 40px;
+	transform: translateY(0);
+	transition: transform 0.3s ease;
 
 
+
+	& h3 {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 21px;
+		color: $color-black;
+		transition: color 0.3s ease;
+	}
+
+	& p {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1;
+		color: $color-black;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		transition: color 0.3s ease;
+		& sup {
+			font-feature-settings: 'pnum' on, 'lnum' on;
+			transition: color 0.3s ease;
+		}
+	}
+
+	&:hover, &:focus {
+		transform: translateY(-10px);
+		transition: transform 0.3s ease;
+
+		& h3, & p, & sup {
+			color: $color-blue;
+			transition: color 0.3s ease;
+		}
+	}
+}
