@@ -243,3 +243,7 @@ typesButtonColor.addEventListener('click', function() {
     typesRoom.classList.remove('types__items_active');
     typesDecor.classList.remove('types__items_active');
 });
+
+
+
+// todo разделить скрипты, чтобы на страницах, на которых они не нужны, были только нужные
